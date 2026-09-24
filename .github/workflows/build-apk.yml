@@ -23,9 +23,9 @@ jobs:
           gradle-version: '8.9'
 
       - name: Extract Android project
-        run: |
-          mkdir android-project
-          unzip -q PuntaCavaliero_Android_FINAL_RELEASE.zip -d android-project
+  run: |
+    mkdir android-project
+    unzip -q PuntaCavaliero_Android_FINAL_IMPROVED.zip -d android-project
       - name: Build APK
         working-directory: android-project
         run: gradle assembleDebug --stacktrace
